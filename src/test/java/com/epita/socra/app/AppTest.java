@@ -28,7 +28,6 @@ public class AppTest {
 
         verify(mock).write("Hello, what's your name ?");
         verify(mock).write(argThat(message -> message.contains("TEST")));
-
     }
     @Test
     public void testRoman1()
